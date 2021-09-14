@@ -24,9 +24,9 @@ module.exports.run = async (data) => {
     
                     if (dataObject.event.text == 'Hello'){
                         const params = {
-                            token: 'xoxb-2369972885398-2510799287632-XyV48gTDWfze7wICPSwCfK7B',
+                            token: 'xoxb-2369972885398-2510799287632-Hrklzo5A0YOJ3CLGFyl5aDgI',
                             channel: dataObject.event.channel,
-                            text: '--> This point is where we connect to aws service and output air data (or other aws dataset) to user.... <--',
+                            text: '--> connect me to AWS dataset <--',
                         }
         
                         Slack.chat.postMessage( params );

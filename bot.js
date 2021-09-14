@@ -24,7 +24,7 @@ module.exports.run = async (data) => {
     
                     if (dataObject.event.text == 'Hello'){
                         const params = {
-                            token: 'xoxb-2369972885398-2510799287632-Hrklzo5A0YOJ3CLGFyl5aDgI',
+                            token: 'PRIVATE KEY HERE',
                             channel: dataObject.event.channel,
                             text: '--> connect me to AWS dataset <--',
                         }
@@ -49,7 +49,7 @@ module.exports.run = async (data) => {
 }
 
 function verifyCall (data){
-    if ( data.token == 'BMn3RrRp9PqRPCpiFi5kFUJs') {
+    if ( data.token == 'PRIVATE KEY HERE') {
         return data.challenge;
     }
     else {

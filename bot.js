@@ -22,11 +22,11 @@ module.exports.run = async (data) => {
                     break;
                 case 'event_callback':
     
-                    if (dataObject.event.text == '/air'){
+                    if (dataObject.event.text == 'Hello'){
                         const params = {
                             token: 'xoxb-2369972885398-2510799287632-XyV48gTDWfze7wICPSwCfK7B',
                             channel: dataObject.event.channel,
-                            text: 'This is where we connect to aws service and output air data (or other aws dataset) to user....',
+                            text: '--> This point is where we connect to aws service and output air data (or other aws dataset) to user.... <--',
                         }
         
                         Slack.chat.postMessage( params );

@@ -3,7 +3,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   region: ap-southeast-2
-  role: arn:aws:iam::967228588216:role/slack
+  role: arn:aws:iam::967228588216:role/slack-role
   timeout: 5
   stage: ${opt:stage, 'dev3'}
   memorySize: 128

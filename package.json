@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/nickjones39/Kumo#readme",
   "dependencies": {
-    "slack": "^11.0.2"
+    "fetch": "^1.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "node-fetch": "^1.7.3",
+    "openaq": "^0.1.0",
+    "slack": "^11.0.2",
+    "slack-node": "^0.1.8"
   }
 }

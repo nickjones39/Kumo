@@ -30,12 +30,12 @@ module.exports.run = async (data) => {
                         fetch(api, settings)
                             .then(res => res.json())
                             .then((json) => {
-                                const data = JSON.stringify(json).toString();
-                                let datas = data.split("}");
+                                const s = JSON.stringify(json);
+                                let data = s.split("}");
                                 const params = {
                                     token: '',
                                     channel: dataObject.event.channel,
-                                    text: '|||||**** --> ' + datas[0] + ' You want to look up: ' + city + '<-- ****|||||',
+                                    text: '|||||**** --> ' + data[0] + ' You want to look up: ' + city + '<-- ****|||||',
                                 }
                                 Slack.chat.postMessage( params );
                                 response.body = {ok: true}
